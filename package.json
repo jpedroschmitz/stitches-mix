@@ -9,7 +9,9 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "watch": "parcel watch",
-    "build": "parcel build"
+    "build": "parcel build",
+    "changeset": "changeset",
+    "release": "changeset publish"
   },
   "keywords": [
     "stitches",
@@ -31,6 +33,7 @@
   },
   "homepage": "https://github.com/jpedroschmitz/stitches-mix#readme",
   "devDependencies": {
+    "@changesets/cli": "^2.24.1",
     "@parcel/packager-ts": "^2.6.2",
     "@parcel/transformer-typescript-types": "^2.6.2",
     "@stitches/core": "^1.2.8",
