@@ -5,9 +5,8 @@
   "author": "João Pedro Schmitz <hey@joaopedro.dev> (@jpedroschmitz)",
   "license": "MIT",
   "source": "src/index.ts",
-  "main": "dist/main.js",
-  "module": "dist/module.js",
-  "types": "dist/types.d.ts",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "watch": "parcel watch",
     "build": "parcel build"
@@ -34,6 +33,9 @@
   "devDependencies": {
     "@parcel/packager-ts": "^2.6.2",
     "@parcel/transformer-typescript-types": "^2.6.2",
+    "@stitches/core": "^1.2.8",
+    "@stitches/react": "^1.2.8",
+    "@types/react": "^18.0.15",
     "parcel": "^2.6.2",
     "typescript": "^4.7.4"
   }
