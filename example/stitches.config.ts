@@ -1,4 +1,5 @@
 import { createStitches } from "@stitches/react";
+import * as utils from "../dist";
 
 export const {
   styled,
@@ -15,4 +16,5 @@ export const {
       "space-cadet": `#130030`,
     },
   },
+  utils,
 });
