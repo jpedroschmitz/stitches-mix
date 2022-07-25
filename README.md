@@ -19,7 +19,11 @@ If you prefer, you can also import specific properties or groups. For more info,
 
 ## Property overview
 
+Do you have an idea for a new property? Please open an issue to suggest it.
+
 ### Spacing
+
+Note: `spaceX` and `spaceY` are utilities for controlling the space between child elements. It's different from `mx` and `my`.
 
 | Property | Group   | CSS Properties Reference                             |
 | -------- | ------- | ---------------------------------------------------- |
@@ -39,8 +43,6 @@ If you prefer, you can also import specific properties or groups. For more info,
 | py       | Spacing | paddingTop, paddingBottom                            |
 | spaceX   | Spacing | marginRight, marginLeft                              |
 | spaceY   | Spacing | marginTop, marginBottom                              |
-
-> `spaceX` and `spaceY` are utilities for controlling the space between child elements. It's different from `mx` and `my`.
 
 ### Radii
 
@@ -82,14 +84,17 @@ export const { styled, css } = createStyled({
 
 ```ts
 import { createStyled } from "@stitches/react";
-import { Space, Radii, createUtil } from "stitches-mix";
+import { createUtil } from "stitches-mix";
 
 const size = createUtil(["width", "height"]);
 
-const borderTopRadius = createUtil<Radii>([
+const borderTopRadius = createUtil([
   "borderTopLeftRadius",
   "borderTopRightRadius",
 ]);
+
+// You can even more control over the utility by adding a selector
+const spaceX = createUtil(["marginLeft"], "& > :not([hidden])~:not([hidden])");
 
 export const { styled, css } = createStyled({
   utils: {
