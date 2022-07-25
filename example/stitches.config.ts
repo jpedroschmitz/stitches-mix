@@ -5,7 +5,7 @@ const spacing = {
   0: `0px`,
   2: `0.5rem`,
   4: `1rem`,
-  8: `2rem`,
+  8: `2rem`
 };
 
 export const {
@@ -16,23 +16,23 @@ export const {
   getCssText,
   theme,
   createTheme,
-  config,
+  config
 } = createStitches({
   theme: {
     space: {
-      ...spacing,
+      ...spacing
     },
     sizes: {
-      ...spacing,
+      ...spacing
     },
     colors: {
-      "space-cadet": `#130030`,
+      "space-cadet": `#130030`
     },
     radii: {
       base: `0.25rem`,
       md: `0.375rem`,
-      lg: `0.5rem`,
-    },
+      lg: `0.5rem`
+    }
   },
-  utils,
+  utils
 });
