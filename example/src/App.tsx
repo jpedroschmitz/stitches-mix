@@ -7,11 +7,11 @@ export default function App() {
     <Box
       as="ul"
       css={{
-        spaceX: 10,
+        spaceX: "$4",
         display: "flex",
         listStyle: "none",
         margin: 0,
-        padding: 0,
+        padding: 0
       }}
     >
       <li>1</li>

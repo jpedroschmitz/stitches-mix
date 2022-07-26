@@ -11,7 +11,7 @@ import { createStyled } from "@stitches/react";
 import * as utils from "stitches-mix";
 
 export const { styled, css } = createStyled({
-  utils,
+  utils
 });
 ```
 
@@ -62,8 +62,8 @@ import { mx, my } from "stitches-mix";
 export const { styled, css } = createStyled({
   utils: {
     mx,
-    my,
-  },
+    my
+  }
 });
 ```
 
@@ -75,32 +75,41 @@ import * as spacingUtils from "stitches-mix/spacing";
 
 export const { styled, css } = createStyled({
   utils: {
-    ...spacingUtils,
-  },
+    ...spacingUtils
+  }
 });
 ```
 
 ## Custom Utils
 
 ```ts
+import type * as Stitches from "@stitches/react";
 import { createStyled } from "@stitches/react";
 import { createUtil } from "stitches-mix";
 
-const size = createUtil(["width", "height"]);
+/**
+ * We still haven't found a solution to infer the types based on the provided
+ * properties, so you need to provide the types to the createUtil function.
+ */
 
-const borderTopRadius = createUtil([
+const size = createUtil<Stitches.PropertyValue<"width">>(["width", "height"]);
+
+const borderTopRadius = createUtil<Stitches.PropertyValue<"borderRadius">>([
   "borderTopLeftRadius",
-  "borderTopRightRadius",
+  "borderTopRightRadius"
 ]);
 
-// You can even more control over the utility by adding a selector
-const spaceX = createUtil(["marginLeft"], "& > :not([hidden])~:not([hidden])");
+// You can more control over the utility by adding a selector
+export const spaceX = createUtil<Stitches.PropertyValue<"margin">>(
+  ["marginLeft"],
+  "& > :not([hidden])~:not([hidden])"
+);
 
 export const { styled, css } = createStyled({
   utils: {
     size,
-    borderTopRadius,
-  },
+    borderTopRadius
+  }
 });
 ```
 

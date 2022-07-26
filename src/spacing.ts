@@ -1,36 +1,41 @@
+import type * as Stitches from "@stitches/react";
+
 import { createUtil } from "./createUtil";
 
-export const m = createUtil([
+type Margin = Stitches.PropertyValue<"margin">;
+type Padding = Stitches.PropertyValue<"padding">;
+
+export const m = createUtil<Margin>([
   "marginTop",
   "marginRight",
   "marginBottom",
-  "marginLeft",
+  "marginLeft"
 ]);
-export const mt = createUtil(["marginTop"]);
-export const mb = createUtil(["marginBottom"]);
-export const mr = createUtil(["marginRight"]);
-export const ml = createUtil(["marginLeft"]);
-export const mx = createUtil(["marginRight", "marginLeft"]);
-export const my = createUtil(["marginTop", "marginBottom"]);
+export const mt = createUtil<Margin>(["marginTop"]);
+export const mb = createUtil<Margin>(["marginBottom"]);
+export const mr = createUtil<Margin>(["marginRight"]);
+export const ml = createUtil<Margin>(["marginLeft"]);
+export const mx = createUtil<Margin>(["marginRight", "marginLeft"]);
+export const my = createUtil<Margin>(["marginTop", "marginBottom"]);
 
-export const p = createUtil([
+export const p = createUtil<Padding>([
   "paddingTop",
   "paddingRight",
   "paddingBottom",
-  "paddingLeft",
+  "paddingLeft"
 ]);
-export const pt = createUtil(["paddingTop"]);
-export const pb = createUtil(["paddingBottom"]);
-export const pr = createUtil(["paddingRight"]);
-export const pl = createUtil(["paddingLeft"]);
-export const px = createUtil(["paddingRight", "paddingLeft"]);
-export const py = createUtil(["paddingTop", "paddingBottom"]);
+export const pt = createUtil<Padding>(["paddingTop"]);
+export const pb = createUtil<Padding>(["paddingBottom"]);
+export const pr = createUtil<Padding>(["paddingRight"]);
+export const pl = createUtil<Padding>(["paddingLeft"]);
+export const px = createUtil<Padding>(["paddingRight", "paddingLeft"]);
+export const py = createUtil<Padding>(["paddingTop", "paddingBottom"]);
 
-export const spaceX = createUtil(
+export const spaceX = createUtil<Margin>(
   ["marginLeft"],
   "& > :not([hidden])~:not([hidden])"
 );
-export const spaceY = createUtil(
+export const spaceY = createUtil<Margin>(
   ["marginTop"],
   "& > :not([hidden])~:not([hidden])"
 );
