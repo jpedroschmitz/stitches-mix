@@ -1,7 +1,7 @@
 import { defineConfig } from "tsup";
 
 export default defineConfig(options => ({
-  entry: ["src/index.ts", "src/spacing.ts", "src/radii.ts"],
+  entry: ["src/index.ts", "src/spacing.ts", "src/radii.ts", "src/size.ts"],
   splitting: true,
   minify: !options.watch,
   sourcemap: true,
