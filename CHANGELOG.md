@@ -1,5 +1,11 @@
 # stitches-mix
 
+## 0.2.0
+
+### Minor Changes
+
+- [#5](https://github.com/jpedroschmitz/stitches-mix/pull/5) [`6c3aebb`](https://github.com/jpedroschmitz/stitches-mix/commit/6c3aebb01dc9d830bb16c39dc3b070e47bf14cf2) Thanks [@jpedroschmitz](https://github.com/jpedroschmitz)! - Add Size utils: `w`, `h`, `minW`, `minH`, `size`, and `minSize`
+
 ## 0.1.0
 
 ### Minor Changes
