@@ -53,6 +53,17 @@ Note: `spaceX` and `spaceY` are utilities for controlling the space between chil
 | borderLeftRadius   | Radii | borderBottomLeftRadius, borderTopLeftRadius     |
 | borderRightRadius  | Radii | borderBottomRightRadius, borderTopRightRadius   |
 
+### Size
+
+| Property | Group | CSS Properties Reference |
+| -------- | ----- | ------------------------ |
+| w        | Size  | width                    |
+| h        | Size  | height                   |
+| minW     | Size  | minWidth                 |
+| minH     | Size  | minHeight                |
+| size     | Size  | width, height            |
+| minSize  | Size  | minWidth, minHeight      |
+
 ## Import specific properties
 
 ```ts
@@ -88,7 +99,7 @@ import { createStyled } from "@stitches/react";
 import { createUtil } from "stitches-mix";
 
 /**
- * We still haven't found a solution to infer the types based on the provided
+ * I still haven't found a solution to infer the types based on the provided
  * properties, so you need to provide the types to the createUtil function.
  */
 
