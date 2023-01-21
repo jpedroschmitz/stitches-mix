@@ -1,5 +1,11 @@
 # stitches-mix
 
+## 0.2.1
+
+### Patch Changes
+
+- [#7](https://github.com/jpedroschmitz/stitches-mix/pull/7) [`d49533e`](https://github.com/jpedroschmitz/stitches-mix/commit/d49533ebcf568bebaf8862c4fd389b5723126510) Thanks [@jpedroschmitz](https://github.com/jpedroschmitz)! - add main to package.json
+
 ## 0.2.0
 
 ### Minor Changes
