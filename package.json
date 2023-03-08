@@ -1,7 +1,7 @@
 {
   "name": "stitches-mix",
   "description": "Set of property utilities for Stitches with theme tokens support. Use the built-in utils, or easily build custom ones.",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "author": "João Pedro Schmitz <hey@joaopedro.dev> (@jpedroschmitz)",
   "license": "MIT",
   "type": "module",
