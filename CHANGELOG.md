@@ -1,5 +1,11 @@
 # stitches-mix
 
+## 0.2.2
+
+### Patch Changes
+
+- [#9](https://github.com/jpedroschmitz/stitches-mix/pull/9) [`0f1e5a3`](https://github.com/jpedroschmitz/stitches-mix/commit/0f1e5a324437cf40b53e0662c2c94ae1a33186f9) Thanks [@jpedroschmitz](https://github.com/jpedroschmitz)! - Fix TypeScript error with wildcard imports on the package
+
 ## 0.2.1
 
 ### Patch Changes
