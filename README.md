@@ -94,7 +94,7 @@ export const { styled, css } = createStyled({
 ## Custom Utils
 
 ```ts
-import type * as Stitches from "@stitches/react";
+import type { PropertyValue } from "@stitches/react";
 import { createStyled } from "@stitches/react";
 import { createUtil } from "stitches-mix";
 
@@ -103,15 +103,15 @@ import { createUtil } from "stitches-mix";
  * properties, so you need to provide the types to the createUtil function.
  */
 
-const size = createUtil<Stitches.PropertyValue<"width">>(["width", "height"]);
+const size = createUtil<PropertyValue<"width">>(["width", "height"]);
 
-const borderTopRadius = createUtil<Stitches.PropertyValue<"borderRadius">>([
+const borderTopRadius = createUtil<PropertyValue<"borderRadius">>([
   "borderTopLeftRadius",
   "borderTopRightRadius"
 ]);
 
 // You can more control over the utility by adding a selector
-export const spaceX = createUtil<Stitches.PropertyValue<"margin">>(
+export const spaceX = createUtil<PropertyValue<"margin">>(
   ["marginLeft"],
   "& > :not([hidden])~:not([hidden])"
 );

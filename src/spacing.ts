@@ -1,9 +1,9 @@
-import type * as Stitches from "@stitches/react";
+import type { PropertyValue } from "@stitches/react";
 
 import { createUtil } from "./createUtil";
 
-type Margin = Stitches.PropertyValue<"margin">;
-type Padding = Stitches.PropertyValue<"padding">;
+type Margin = PropertyValue<"margin">;
+type Padding = PropertyValue<"padding">;
 
 export const m = createUtil<Margin>([
   "marginTop",

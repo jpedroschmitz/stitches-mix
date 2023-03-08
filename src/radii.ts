@@ -1,8 +1,8 @@
-import type * as Stitches from "@stitches/react";
+import type { PropertyValue } from "@stitches/react";
 
 import { createUtil } from "./createUtil";
 
-type Radii = Stitches.PropertyValue<"borderRadius">;
+type Radii = PropertyValue<"borderRadius">;
 
 export const borderTopRadius = createUtil<Radii>([
   "borderTopLeftRadius",
