@@ -1,8 +1,8 @@
-import type * as Stitches from "@stitches/react";
+import type { PropertyValue } from "@stitches/react";
 
 import { createUtil } from "./createUtil";
 
-type Size = Stitches.PropertyValue<"width">
+type Size = PropertyValue<"width">
 
 export const w = createUtil<Size>([
   "width",
